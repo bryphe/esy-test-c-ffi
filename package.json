@@ -1,13 +1,13 @@
 {
-  "name": "esy-minimal-base-project",
+  "name": "esy-test-c-ffi",
   "version": "0.1.0",
   "description": "Reason workflow with Esy",
   "license": "MIT",
   "esy": {
     "build": [
-      ["ocamlopt", "-o", "hello.opt",  "hello.ml", "hello_stubs.c"]
+      ["ocamlopt", "-o", "_build/hello.opt.exe",  "hello.ml", "hello_stubs.c"]
     ],
-    "buildsInSource": true
+    "buildsInSource": "_build"
   },
   "peerDependencies": {
     "ocaml": "~4.6.0"
