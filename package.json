@@ -1,0 +1,20 @@
+{
+  "name": "esy-minimal-base-project",
+  "version": "0.1.0",
+  "description": "Reason workflow with Esy",
+  "license": "MIT",
+  "esy": {
+    "build": [
+      ["ocamlopt", "-o", "hello.opt",  "hello.ml", "hello_stubs.c"]
+    ],
+    "buildsInSource": true
+  },
+  "peerDependencies": {
+    "ocaml": "~4.6.0"
+  },
+  "devDependencies": {
+    "ocaml": "~4.6.0"
+  }, 
+  "dependencies": {
+  }
+}
